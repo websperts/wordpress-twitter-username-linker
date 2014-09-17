@@ -21,14 +21,16 @@ Automatically links twitter usernames prefixed with the `@` sign in your WordPre
 
 Every generated link to a user’s Twitter profile has the class `twitter-username` so that you’re able to style username links.
 
-	.twitter-username {
-		color: #226699;
-	}
+```css
+.twitter-username {
+	color: #226699;
+}
 
-	.twitter-username:before {
-		content: '\u0040';
-		color: #7aa3c1;
-	}
+.twitter-username:before {
+	content: '\u0040';
+	color: #7aa3c1;
+}
+```
 
 In addition, all generated links are `rel="nofollow"` as well as `target="blank"`. Email addresses remain untouched by this plugin.
 
